@@ -1,2 +1,2 @@
-const demo = \(\) =&gt; {}
+`const demo = () => {}`
 
