@@ -1,10 +1,11 @@
 {
+    "title" : "haobinbook",
+    "author" : "haobin",
+    "description" : "记录代码",
     "plugins": [ 
-        "github" 
+        
     ],
     "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/Hbinbin"
-        }
+        
     }
 }
