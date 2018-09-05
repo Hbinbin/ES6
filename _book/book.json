@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "prism",
+        "highlight",
+        "back-to-top-button"
+    ],
+    "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
+        }
+    }
+}
