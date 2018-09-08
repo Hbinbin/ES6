@@ -49,7 +49,7 @@ package.json文件
 在浏览器中使用：
 
 ```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.4.4/babel.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script type="text/babel">
     // Your ES6 code
 </script>
