@@ -14,11 +14,9 @@
 
 注：开启chrome的ES6支持：
 
-```
-     1.打开：chrome://flags/ 
+     1.打开：chrome://flags/
 
-     2.勾选：![](/assets/屏幕快照 2018-09-08 上午11.47.36.png)
-```
+     2.勾选：![](/assets/ES6+.png)
 
 #### node
 
