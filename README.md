@@ -32,7 +32,8 @@ package.json文件
 
 ```js
 "dependencies":{
-     "babel-polyfill": "^6.26.0",
+     //"babel-polyfill": "^6.26.0",
+     "babel-runtime":"6.26.0"
 },
 "devDependencies":{
     "babel-core": "^6.22.1",
@@ -41,8 +42,8 @@ package.json文件
     "babel-preset-stage-2": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-loader": "^7.1.1",
-    "babel-eslint": "^7.1.1",
-    "babel-plugin-component": "^0.10.1"
+    //"babel-eslint": "^7.1.1",
+    //"babel-plugin-component": "^0.10.1"
 }
 ```
 
