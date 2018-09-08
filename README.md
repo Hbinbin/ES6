@@ -51,7 +51,7 @@ package.json文件
 ```
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script type="text/babel">
-    // Your ES6 code
+    // ES6 code
 </script>
 ```
 
