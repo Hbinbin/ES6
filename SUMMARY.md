@@ -6,5 +6,5 @@
   * [函数默认值](han-shu-mo-ren-zhi/han-shu-mo-ren-zhi.md)
 * [Promise](promise.md)
 * [Async await](async-await.md)
-* Class继承
+* [Class继承](classji-cheng.md)
 
