@@ -17,7 +17,7 @@
 ```
  1.打开：chrome://flags/
 
- 2.勾选：![](/assets/ES6+.png)
+ 2.勾选：Experimental JavaScript为enable
 ```
 
 #### node
