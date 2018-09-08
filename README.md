@@ -14,9 +14,11 @@
 
 注：开启chrome的ES6支持：
 
-     1.打开：chrome://flags/
+```
+ 1.打开：chrome://flags/
 
-     2.勾选：![](/assets/ES6+.png)
+ 2.勾选：![](/assets/ES6+.png)
+```
 
 #### node
 
@@ -28,7 +30,7 @@ V10.8.0
 
 package.json文件
 
-```
+```js
 "dependencies":{
      "babel-polyfill": "^6.26.0",
 },
@@ -46,7 +48,7 @@ package.json文件
 
 在浏览器中使用：
 
-```
+```js
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script type="text/babel">
     // ES6 code
