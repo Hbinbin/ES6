@@ -8,6 +8,6 @@
 * [Async await](async-await.md)
 * [Class继承](classji-cheng.md)
 * [其他](qi-ta.md)
-  * Symbol
-  * 点运算符
+  * [Symbol](qi-ta/symbol.md)
+  * [点运算符](qi-ta/dian-yun-suan-fu.md)
 
