@@ -20,9 +20,7 @@
  2.勾选：Experimental JavaScript为enable
 ```
 
-![](/assets/ES6+.png)
-
-#### node
+### ![](/assets/ES6+.png)node
 
 V10.8.0
 
