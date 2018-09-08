@@ -44,26 +44,16 @@ package.json文件
     "babel-eslint": "^7.1.1",
     "babel-plugin-component": "^0.10.1"
 }
-
 ```
 
+在浏览器中使用：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.4.4/babel.min.js"></script>
+<script type="text/babel">
+    // Your ES6 code
+</script>
+```
 
 
 
