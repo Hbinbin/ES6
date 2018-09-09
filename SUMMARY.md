@@ -2,7 +2,7 @@
 
 * [前言](README.md)
 * [开始](kai-shi.md)
-* [函数相关](han-shu-mo-ren-zhi.md)
+* [函数](han-shu-mo-ren-zhi.md)
   * [函数默认值](han-shu-mo-ren-zhi/han-shu-mo-ren-zhi.md)
   * [rest参数](han-shu-mo-ren-zhi/restcan-shu.md)
   * [箭头函数](han-shu-mo-ren-zhi/jian-tou-han-shu.md)
