@@ -1,4 +1,4 @@
-只需要记住以下三点：
+### 只需要记住以下三点：
 
 1.函数体内的`this`对象，就是定义时所在的对象，而不是使用时所在的对象。
 
@@ -39,7 +39,7 @@ const Utils = (name, age, work) => {
     this.age = age;
     this.work = work;
 }
-let utils = new Utils();
+let utils = new Utils(); // 报错：Uncaught TypeError: Utils is not a constructor
 ```
 
 3.不可以使用`arguments`对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。
@@ -53,6 +53,37 @@ const foo = (...args) =>{
 }
 foo(1,2,3);
 ```
+
+### 在Vue和React中
+
+##### vue中：
+
+在选项中：如钩子函数、methods、watch等使用箭头函数，this不会像预期指向Vue实例，而只是一个简单的‘当前定义时所在的对象’。在.vue文件中：
+
+```js
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    mth: () => {
+      console.log(this.a.methods)
+    },
+    mth2 () {
+      console.log(this)
+    }
+
+  },
+  created: () => {
+    console.log(this)
+  }
+}
+```
+
+
 
 
 
