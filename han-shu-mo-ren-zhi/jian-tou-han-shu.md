@@ -150,5 +150,5 @@ class foo extends Component {
 }
 ```
 
-
+传送门：[class的this指向](http://es6.ruanyifeng.com/?search=import&x=0&y=0#docs/class#this-%E7%9A%84%E6%8C%87%E5%90%91)、[React事件处理](https://react.docschina.org/docs/handling-events.html)
 
