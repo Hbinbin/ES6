@@ -16,12 +16,10 @@ $('#btn').click(function() {
 });
 //现在
 $('#btn').click(function() {
-    var self = this;
     setTimeout(() => {
         console.log(this.textContent);
     });
 });
-
 ```
 
 2.不可以当作构造函数，也就是说，不可以使用`new`命令，否则会抛出一个错误。
