@@ -15,14 +15,13 @@ btn.onclick = function() {
     });
 }
 //现在
-$('#btn').click(function() {
+btn.onclick = function() {
     setTimeout(() => {
         console.log(this.textContent);
     });
-});
-```
+}
 
-2.不可以当作构造函数，也就是说，不可以使用`new`命令，否则会抛出一个错误。
+```
 
 3.不可以使用`arguments`对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。
 
