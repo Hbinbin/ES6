@@ -41,7 +41,7 @@ export default class Utils {
         paramsStr += i > 1 ? `&${key}=${val}` : `${key}=${val}`;
         i++;
       }
-      return needEncode ? encodeURIComponent(`${url.split('?')[0]}?${paramsStr}`) : `${url.split('?')[0]}?${paramsStr}`;
+      return needEncode ? encodeURIComponent(`${url.split('?')[0]} ? ${paramsStr}`) : `${url.split('?')[0]} ? ${paramsStr}`;
   }
 }
 ```
