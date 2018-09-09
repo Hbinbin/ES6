@@ -8,12 +8,12 @@
 HTML:
 <button id="btn" >long long ago</button>
 //以前
-$('#btn').click(function() {
+btn.onclick = function() {
     var self = this;
     setTimeout(function() {
-        console.log(this.textContent);
+        console.log(self.textContent);
     });
-});
+}
 //现在
 $('#btn').click(function() {
     setTimeout(() => {
