@@ -2,7 +2,7 @@
 
 函数柯里华实现累加
 
-```
+```js
 const accumulation = (...args1) => {
   // 以前
   // let allArgs = [].slice.call(arguments);
