@@ -33,9 +33,10 @@ class Info {
  }
 
  let mineInfo = new Info('haobin',18,'web前端');
- mineInfo.workInfo = 'S72768';
+ mineInfo.workInfo = 'S72768'; 
+ console.log(fooInfo.workInfo); // 公司是ctrip，项目组cruise，工号S72768
  console.log(mineInfo.getAllInfo()); // 我是haobin，今年18，工作是web前端;公司是ctrip，项目组cruise，工号S72768
 ```
 
-
+1.从此js多了一种声明方式：class
 
