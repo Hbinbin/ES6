@@ -27,7 +27,7 @@ export default class Utils {
      */
     static addParams({ url = '', params = {}, isEncode = false, needEncode = false } = {}) {
       url = isEncode ? decodeURIComponent(url) : url;
-      if (url.indexOf('?') > -1) {
+      if (url.includes('?')) {
         let oldParams = {};
         url.split('?')[1].split('&').forEach(val => {
           let newVal = val.split('=');
