@@ -1,6 +1,9 @@
+### 基本用法
+
 举个栗子：
 
 ```js
+// class声明，定义一个‘类’
 class Info {
   // 私有属性
    _workInfo = {
@@ -38,5 +41,11 @@ class Info {
  console.log(mineInfo.getAllInfo()); // 我是haobin，今年18，工作是web前端;公司是ctrip，项目组cruise，工号S72768
 ```
 
-1.从此js多了一种声明方式：class
+### 继承
+
+```
+
+```
+
+
 
