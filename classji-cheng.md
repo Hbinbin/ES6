@@ -52,7 +52,7 @@ ES5 的继承，实质是先创造子类的实例对象`this`，然后再将父�
 如果这段话没看懂，那就使用继承时，直接下面的代码：
 
 ```js
-class Foo extends B.ar {
+class Foo extends Bar {
    constructor(...args) {
      super(...args);
      // some code
