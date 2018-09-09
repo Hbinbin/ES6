@@ -83,6 +83,8 @@ export default {
 }
 ```
 
+传送门：[vue源码\(可参考其中的initMethods方法\)](https://github.com/vuejs/vue/blob/dev/src/core/instance/state.js#L145)
+
 mth1 && created![](/assets/mth1.png)mth2
 
 ![](/assets/mth2.png)
@@ -150,5 +152,5 @@ class foo extends Component {
 }
 ```
 
-传送门：[class的this指向](http://es6.ruanyifeng.com/?search=import&x=0&y=0#docs/class#this-%E7%9A%84%E6%8C%87%E5%90%91)、[React事件处理](https://react.docschina.org/docs/handling-events.html)
+传送门：[class的this指向](http://es6.ruanyifeng.com/?search=import&x=0&y=0#docs/class#this-的指向)、[React事件处理](https://react.docschina.org/docs/handling-events.html)
 
