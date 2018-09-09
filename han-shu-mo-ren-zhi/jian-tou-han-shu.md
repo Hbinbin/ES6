@@ -148,8 +148,6 @@ class foo extends Component {
     );
   }
 }
-
-
 ```
 
 
