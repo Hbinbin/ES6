@@ -14,7 +14,7 @@ export default class Utils {
       })
       return Array.isArray(obj) ? (clone.length = obj.length) && Array.from(clone) : clone
     }
-    
+
     /**
      * url添加参数
      * @static
@@ -43,7 +43,6 @@ export default class Utils {
       }
       return needEncode ? encodeURIComponent(`${url.split('?')[0]}?${paramsStr}`) : `${url.split('?')[0]}?${paramsStr}`;
   }
-
 }
 ```
 
