@@ -87,30 +87,69 @@ mth1 && created![](/assets/mth1.png)mth2
 
 ![](/assets/mth2.png)
 
-##### React中
+##### React中事件的绑定方式
 
 ```js
+//1.
 class foo extends Component {
   constructor(props) {
     super(props);
-    //this.bar = this.bar.bind(this);
+    this.bar = this.bar.bind(this);
   }
-  //bar() {
+  bar() {
     // some code
-  //}
-  // or 
-  bar = () => {
-    // some code  
   }
-  
-
-
   render() {
     return (
       <li onClick={this.bar}>{content}</li>
     );
   }
 }
+//2.
+class foo extends Component {
+  constructor(props) {
+    super(props);
+    this.bar = ::this.bar;
+  }
+  bar() {
+    // some code
+  }
+  render() {
+    return (
+      <li onClick={this.bar}>{content}</li>
+    );
+  }
+}
+//3.
+class foo extends Component {
+  constructor(props) {
+    super(props);
+  }
+  bar = () = {
+    // some code
+  }
+  render() {
+    return (
+      <li onClick={this.bar}>{content}</li>
+    );
+  }
+}
+//4.
+class foo extends Component {
+  constructor(props) {
+    super(props);
+  }
+  bar() {
+    // some code
+  }
+  render() {
+    return (
+      <li onClick={() => this.bar()}>{content}</li>
+    );
+  }
+}
+
+
 ```
 
 
