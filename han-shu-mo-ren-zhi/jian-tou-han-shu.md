@@ -1,4 +1,4 @@
-### 只需要记住以下三点：
+只需要记住以下三点：
 
 1.函数体内的`this`对象，就是定义时所在的对象，而不是使用时所在的对象。
 
@@ -65,11 +65,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: '我是this'
     }
   },
   methods: {
-    mth: () => {
+    mth1: () => {
       console.log(this.a.methods)
     },
     mth2 () {
@@ -83,7 +83,5 @@ export default {
 }
 ```
 
-
-
-
+mth1 && created![](/assets/mth1.png)
 
