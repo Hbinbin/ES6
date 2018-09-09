@@ -30,3 +30,31 @@ btn.onclick = () => {
 
 2.不可以当作构造函数，也就是说，不可以使用`new`命令，否则会抛出一个错误。
 
+栗子：
+
+```
+// wrong code
+const Utils = (name, age, work) => {
+    this.name = name;
+    this.age = age;
+    this.work = work;
+}
+let utils = new Utils();
+
+```
+
+3.不可以使用`arguments`对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。
+
+栗子：
+
+```
+const foo = (...args) =>{
+    console.log(args);
+    console.log(arguments);
+}
+
+```
+
+  
+
+
