@@ -19,7 +19,7 @@ class Info {
    }
    // 实例方法
    getAllInfo() {
-     return `${this._getInfo()};${this.workInfo}`
+     return `${this._getInfo()};${this.workInfo}` // this.workInfo相当于一个实例属性
    }
    // getter
    get workInfo (){
@@ -34,7 +34,7 @@ class Info {
 
  let mineInfo = new Info('haobin',18,'web前端');
  mineInfo.workInfo = 'S72768';
- console.log(mineInfo.getAllInfo());
+ console.log(mineInfo.getAllInfo()); //
 ```
 
 
