@@ -34,7 +34,7 @@ class Info {
 
  let mineInfo = new Info('haobin',18,'web前端');
  mineInfo.workInfo = 'S72768';
- console.log(mineInfo.getAllInfo()); //
+ console.log(mineInfo.getAllInfo()); // 我是haobin，今年18，工作是web前端;公司是ctrip，项目组cruise，工号S72768
 ```
 
 
