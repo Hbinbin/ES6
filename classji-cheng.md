@@ -5,6 +5,12 @@
 ```js
 // class声明，定义一个‘类’
 class Info {
+  // 构造方法
+   constructor(name, age, work) {
+     this.name = name;
+     this.age = age;
+     this.work = work;
+   }
   // 私有属性
    _workInfo = {
      company: 'ctrip',
@@ -13,13 +19,7 @@ class Info {
   // 私有方法
    _getInfo() {
      return `我是${this.name}，今年${this.age}，工作是${this.work}`;
-   }
-   // 构造方法
-   constructor(name, age, work) {
-     this.name = name;
-     this.age = age;
-     this.work = work;
-   }
+   }   
    // 实例方法
    getAllInfo() {
      return `${this._getInfo()};${this.workInfo}` // this.workInfo相当于一个实例属性
@@ -32,7 +32,6 @@ class Info {
    set workInfo (employeeNumber){
      this._workInfo.employeeNumber = employeeNumber;
    }
-
  }
 
  let mineInfo = new Info('haobin',18,'web前端');
