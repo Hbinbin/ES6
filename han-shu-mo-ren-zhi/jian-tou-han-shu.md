@@ -40,7 +40,6 @@ const Utils = (name, age, work) => {
     this.work = work;
 }
 let utils = new Utils();
-
 ```
 
 3.不可以使用`arguments`对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。
@@ -49,12 +48,11 @@ let utils = new Utils();
 
 ```
 const foo = (...args) =>{
-    console.log(args);
-    console.log(arguments);
+    console.log(args); // [1,2,3]
+    console.log(arguments); // 报错：Uncaught ReferenceError: arguments is not defined
 }
-
+foo(1,2,3);
 ```
 
-  
 
 
