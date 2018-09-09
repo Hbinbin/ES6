@@ -1,4 +1,4 @@
-```
+```js
 foo::bar;
 // 等同于
 bar.bind(foo);
