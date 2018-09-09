@@ -1,5 +1,7 @@
 ES6 之前，不能直接为函数的参数指定默认值，只能采用变通的方法。
 
+举个栗子：
+
     // 以前
     function info(name, age, wor) {
         var name = name || 'haobin',
