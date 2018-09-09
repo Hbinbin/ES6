@@ -6,10 +6,10 @@
 
 ```js
 HTML:
-<button id="btn" style='width:200px;height: 200px;border:2px solid #ddd;'>2222</button>
+<button id="btn" >long long ago</button>
 //以前
 $('#btn').click(function() {
-    var self = this;t
+    var self = this;
     setTimeout(function() {
         console.log(this.textContent);
     });
