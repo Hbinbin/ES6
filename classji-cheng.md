@@ -32,12 +32,17 @@ class Info {
    set workInfo (employeeNumber){
      this._workInfo.employeeNumber = employeeNumber;
    }
+   // 静态方法
+   static address() {
+     return '凌空SOHO'
+   }
  }
 
  let mineInfo = new Info('haobin',18,'web前端');
  mineInfo.workInfo = 'S72768'; 
  console.log(fooInfo.workInfo); // 公司是ctrip，项目组cruise，工号S72768
  console.log(mineInfo.getAllInfo()); // 我是haobin，今年18，工作是web前端;公司是ctrip，项目组cruise，工号S72768
+ console.log(Info.address()); // 不可用于new关键字的实例，直接通过类调用
 ```
 
 ### 继承
