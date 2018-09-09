@@ -83,5 +83,33 @@ export default {
 }
 ```
 
-mth1 && created![](/assets/mth1.png)
+mth1 && created![](/assets/mth1.png)mth2
+
+![](/assets/mth2.png)
+
+##### React中
+
+```js
+class foo extends Component {
+  constructor(props) {
+    super(props);
+    this.bar = this.bat.bind(this);
+  }
+  deleteItem() {
+    const { delItem, index}=this.props;
+    delItem(index);
+  }
+  
+
+  // 子组件通过props调用父组件传过来的方法，以方法参数向父组件传递数据
+  render() {
+    const {content} = this.props;
+    return (
+      <li onClick={this.deleteItem}>{content}</li>
+    );
+  }
+}
+```
+
+
 
