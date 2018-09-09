@@ -54,7 +54,7 @@ const foo = (...args) =>{
 foo(1,2,3);
 ```
 
-### 在Vue和React中
+### 在Vue和React中的使用
 
 ##### vue中：
 
