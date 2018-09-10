@@ -49,6 +49,8 @@ class Info {
 
 ES5 的继承，实质是先创造子类的实例对象`this`，然后再将父类的方法添加到`this`上（`Parent.apply(this)`）。ES6 的继承机制完全不同，实质是先将父类实例对象的属性和方法，加到`this`上面（所以必须先调用`super`方法），然后再用子类的构造函数修改`this`。
 
+super作为函数使用时，只能用在子类的构造方法中。
+
 ```js
 class Foo extends Bar {
    constructor(...args) {
@@ -58,6 +60,45 @@ class Foo extends Bar {
    // some code
  }
 ```
+
+super作为对象使用时，在静态方法之中指向父类，在普通方法之中指向父类的原型对象。
+
+```js
+class Parent {
+  static foo(msg) {
+    console.log('static', msg);
+  }
+  bar(msg) {
+    console.log('instance', msg);
+  }
+}
+
+class Child extends Parent {
+  static foo(msg) {
+    super.myMethod(msg);
+  }
+  bar(msg) {
+    super.myMethod(msg);
+  }
+}
+
+Child.myMethod(1); // static 1
+
+var child = new Child();
+child.myMethod(2); // instance 2
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
