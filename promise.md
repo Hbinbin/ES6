@@ -142,15 +142,11 @@ class Promise{
 
 1.then、catch、finally可随意组合。
 
-2.Promise对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获（catch）为止。catch总会捕捉到之前的错误，不管是promise/then/catch/finally中的错误。
-
-catch中的错误可在后面的catch捕捉。
+2.Promise对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获（catch）为止。catch总会捕捉到之前的错误。
 
 3.Promise内部的错误不会影响到Promise外部的代码，不会退出进程、终止脚本执行。
 
 4.finally方法用于指定不管Promise对象最后状态如何，都会执行的操作。
-
-finally中的代码总会执行，不管是之前的promise内部，还是then，还是catch中发生错误。
 
 5.then里的回调是异步执行。
 
