@@ -1,8 +1,10 @@
 简介
 
-JS的异步：定时器、事件、HTTP请求。
-
 promise和async await的目的就是让异步流程，用同步的方式表达，避免回调地狱。
+
+用法：
+
+const promise
 
 原理：
 
@@ -140,7 +142,7 @@ class Promise{
 
 1.then、catch、finally可随意组合。
 
-2.Promise对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获（catch）为止。catch总会捕捉到之前的错误，不管是promise/then/catch/finally的错误。
+2.Promise对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获（catch）为止。catch总会捕捉到之前的错误，不管是promise/then/catch/finally中的错误。
 
 catch中的错误可在后面的catch捕捉。
 
@@ -149,6 +151,8 @@ catch中的错误可在后面的catch捕捉。
 4.finally方法用于指定不管Promise对象最后状态如何，都会执行的操作。
 
 finally中的代码总会执行，不管是之前的promise内部，还是then，还是catch中发生错误。
+
+5.then里的回调是异步执行。
 
 传送门：[Promises/A+](https://promisesaplus.com/)、[手写promise教程](https://juejin.im/post/5b2f02cd5188252b937548ab)
 
