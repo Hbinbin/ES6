@@ -9,7 +9,7 @@ const accumulation = (...args1) => {
   // 现在
   let allArgs = args1;
   const _fn = (...args2) => {
-    allArgs = [...args1,...args2];
+    allArgs = [...allArgs,...args2];
     // allArgs = 
     return _fn;
   }
