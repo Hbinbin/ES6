@@ -63,6 +63,8 @@ class Foo extends Bar {
 
 super作为对象使用时，在静态方法之中指向父类，在普通方法之中指向父类的原型对象。
 
+理解：class里的static静态方法，不会被实例继承，是直接通过类来调用；
+
 ```js
 class Parent {
   static foo(msg) {
