@@ -4,7 +4,7 @@ JS的异步：定时器、事件、HTTP请求。
 
 promise和async await的目的就是让异步流程，用同步的方式表达，避免回调地狱。
 
-原理：发布订阅模式 + 回调
+原理：
 
 ```js
 class Promise{
@@ -136,5 +136,5 @@ class Promise{
 }
 ```
 
-
+传送门：[Promises/A+](https://promisesaplus.com/)、[手写promise教程](https://juejin.im/post/5b2f02cd5188252b937548ab)
 
