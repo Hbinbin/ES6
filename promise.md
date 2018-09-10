@@ -136,15 +136,6 @@ class Promise{
 }
 ```
 
-总结：  
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC Semibold'; color: \#000000; -webkit-text-stroke: \#000000}  
-p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: \#000000; -webkit-text-stroke: \#000000}  
-p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: \#000000; -webkit-text-stroke: \#000000}  
-span.s1 {font: 12.0px 'PingFang SC'; font-kerning: none}  
-span.s2 {font-kerning: none}  
-span.s3 {font: 12.0px 'Helvetica Neue'; font-kerning: none}  
-
-
 **总结：**
 
 1.then、catch、finally可随意组合。
