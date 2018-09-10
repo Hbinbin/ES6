@@ -19,11 +19,13 @@
  2.勾选：Experimental JavaScript为enable
 ```
 
-### ![](/assets/ES6+.png)node
+![](/assets/ES6+.png)传送门：[ES6](http://es6.ruanyifeng.com/?search=import&x=0&y=0#README)
+
+### node
 
 V10.8.0
 
-![](/assets/node-v10.8.0-support.png)
+![](/assets/node-v10.8.0-support.png)传送门：[node官网](https://nodejs.org/zh-cn/)
 
 ## babel：javascript编译器
 
@@ -55,5 +57,5 @@ package.json文件
 </script>
 ```
 
-
+传送门：[babel中文网](https://www.babeljs.cn/docs/setup/)
 
