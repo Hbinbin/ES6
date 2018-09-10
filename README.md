@@ -55,5 +55,5 @@ package.json文件
 </script>
 ```
 
-
+传送门：[babel中文网](https://www.babeljs.cn/docs/setup/)
 
