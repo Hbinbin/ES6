@@ -10,7 +10,7 @@ const accumulation = (...args1) => {
   let allArgs = args1;
   const _fn = (...args2) => {
     allArgs = [...allArgs,...args2];
-    // allArgs = 
+    // allArgs = allArgs.concat([].slice.call(arguments));
     return _fn;
   }
   _fn.toString = () => {
