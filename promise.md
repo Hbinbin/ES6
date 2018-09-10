@@ -1,4 +1,4 @@
-### 简介
+简介
 
 JS的异步：定时器、事件、HTTP请求。
 
@@ -35,37 +35,66 @@ class Promise{
     }
   }
   then(onFulfilled,onRejected) {
-    // 声明返回的promise2
-    let promise2 = new Promise((resolve, reject)=>{
+    // onFulfilled如果不是函数，就忽略onFulfilled，直接返回value
+    onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : value => value;
+    // onRejected如果不是函数，就忽略onRejected，直接扔出错误
+    onRejected = typeof onRejected === 'function' ? onRejected : err => { throw err };
+    let promise2 = new Promise((resolve, reject) => {
       if (this.state === 'fulfilled') {
-        let x = onFulfilled(this.value);
-        // resolvePromise函数，处理自己return的promise和默认的promise2的关系
-        resolvePromise(promise2, x, resolve, reject);
+        // 异步
+        setTimeout(() => {
+          try {
+            let x = onFulfilled(this.value);
+            resolvePromise(promise2, x, resolve, reject);
+          } catch (e) {
+            reject(e);
+          }
+        }, 0);
       };
       if (this.state === 'rejected') {
-        let x = onRejected(this.reason);
-        resolvePromise(promise2, x, resolve, reject);
+        // 异步
+        setTimeout(() => {
+          // 如果报错
+          try {
+            let x = onRejected(this.reason);
+            resolvePromise(promise2, x, resolve, reject);
+          } catch (e) {
+            reject(e);
+          }
+        }, 0);
       };
       if (this.state === 'pending') {
-        this.onResolvedCallbacks.push(()=>{
-          let x = onFulfilled(this.value);
-          resolvePromise(promise2, x, resolve, reject);
-        })
-        this.onRejectedCallbacks.push(()=>{
-          let x = onRejected(this.reason);
-          resolvePromise(promise2, x, resolve, reject);
-        })
-      }
-    });
+        this.onResolvedCallbacks.push(() => {
+          // 异步
+          setTimeout(() => {
+            try {
+              let x = onFulfilled(this.value);
+              resolvePromise(promise2, x, resolve, reject);
+            } catch (e) {
+              reject(e);
+            }
+          }, 0);
+        });
+        this.onRejectedCallbacks.push(() => {
+          // 异步
+          setTimeout(() => {
+            try {
+              let x = onRejected(this.reason);
+              resolvePromise(promise2, x, resolve, reject);
+            } catch (e) {
+              reject(e);
+            }
+          }, 0)
+        });
+      };
+    })
+    
+    
     // 返回promise，完成链式
     return promise2;
   }
 }
 
-作者：卡姆爱卡姆
-链接：https://juejin.im/post/5b2f02cd5188252b937548ab
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 
