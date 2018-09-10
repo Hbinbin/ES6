@@ -136,5 +136,28 @@ class Promise{
 }
 ```
 
+总结：  
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC Semibold'; color: \#000000; -webkit-text-stroke: \#000000}  
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: \#000000; -webkit-text-stroke: \#000000}  
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: \#000000; -webkit-text-stroke: \#000000}  
+span.s1 {font: 12.0px 'PingFang SC'; font-kerning: none}  
+span.s2 {font-kerning: none}  
+span.s3 {font: 12.0px 'Helvetica Neue'; font-kerning: none}  
+
+
+**总结：**
+
+1.then、catch、finally可随意组合。
+
+2.Promise对象的错误具有“冒泡”性质，会一直向后传递，直到被捕获（catch）为止。catch总会捕捉到之前的错误，不管是promise/then/catch/finally的错误。
+
+catch中的错误可在后面的catch捕捉。
+
+3.Promise内部的错误不会影响到Promise外部的代码，不会退出进程、终止脚本执行。
+
+4.finally方法用于指定不管Promise对象最后状态如何，都会执行的操作。
+
+finally中的代码总会执行，不管是之前的promise内部，还是then，还是catch中发生错误。
+
 传送门：[Promises/A+](https://promisesaplus.com/)、[手写promise教程](https://juejin.im/post/5b2f02cd5188252b937548ab)
 
