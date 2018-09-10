@@ -13,7 +13,7 @@ const accumulation = (...args1) => {
     // allArgs = 
     return _fn;
   }
-  _fn.toString = function () {
+  _fn.toString = () => {
     return allArgs.reduce((a, b) => a + b);
   }
   return _fn;
