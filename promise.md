@@ -132,10 +132,7 @@ class Promise{
 }
 
 作者：卡姆爱卡姆
-链接：https://juejin.im/post/5b2f02cd5188252b937548ab
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非
-
+链接：https://juejin.im/post/5b2f02cd51882
     // 返回promise，完成链式
     return promise2;
   }
