@@ -87,9 +87,12 @@ class Promise{
           }, 0)
         });
       };
-    })
-   resolvePromise(promise2, x, resolve, reject){
-  // 循环引用报错
+    });
+    // 返回promise，完成链式
+    return promise2;
+  }
+  _resolvePromise(promise2, x, resolve, reject){
+    // 循环引用报错
   if(x === promise2){
     // reject报错
     return reject(new TypeError('Chaining cycle detected for promise'));
@@ -131,11 +134,8 @@ class Promise{
   }
 }
 
-
-    // 返回promise，完成链式
-    return promise2;
-  }
 }
+
 ```
 
 
