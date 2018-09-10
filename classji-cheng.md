@@ -75,30 +75,17 @@ class Parent {
 
 class Child extends Parent {
   static foo(msg) {
-    super.myMethod(msg);
+    super.foo(msg);
   }
   bar(msg) {
-    super.myMethod(msg);
+    super.bar(msg);
   }
 }
 
-Child.myMethod(1); // static 1
-
+Child.foo(1); // static 1
 var child = new Child();
-child.myMethod(2); // instance 2
+child.bar(2); // instance 2
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
