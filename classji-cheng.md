@@ -3,34 +3,34 @@
 ```js
 // class声明，定义一个‘类’
 class Info {
-  // 构造方法
+  // 构造方法：相当于ES5的构造函数
    constructor(name, age, work) {
      this.name = name;
      this.age = age;
      this.work = work;
    }
-  // 私有属性
+  // 私有属性：只在类内部使用的私有属性
    _workInfo = {
      company: 'ctrip',
      team: 'cruise'
   }
-  // 私有方法
+  // 私有方法：只在类内部调用的私有方法
    _getInfo() {
      return `我是${this.name}，今年${this.age}，工作是${this.work}`;
    }   
-   // 实例方法
+   // 实例方法：每个实例都可调用的方法
    getAllInfo() {
      return `${this._getInfo()};${this.workInfo}` // this.workInfo相当于一个实例属性
    }
-   // getter
+   // getter：获得类的某一个属性
    get workInfo (){
      return `公司是${this._workInfo.company}，项目组${this._workInfo.team}，工号${this._workInfo.employeeNumber || '未知'}`;
    }
-   // setter
+   // setter：设置类的某一个属性
    set workInfo (employeeNumber){
      this._workInfo.employeeNumber = employeeNumber;
    }
-   // 静态方法
+   // 静态方法：适合做工具函数，可被子类继承，子类可通过super调用
    static address() {
      return '凌空SOHO'
    }
