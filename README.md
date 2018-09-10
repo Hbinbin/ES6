@@ -16,7 +16,6 @@
 
 ```
  1.打开：chrome://flags/
-
  2.勾选：Experimental JavaScript为enable
 ```
 
