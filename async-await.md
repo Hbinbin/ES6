@@ -2,7 +2,7 @@
 
 使用`async / await`, 搭配`promise，` 可以通过编写同步的代码方式来处理异步流程, 提高代码的简洁性和可读性。
 
-Async/Await是基于Promise，Promise是基于回调函数。
+async await是基于Promise，Promise是基于回调函数。
 
 ### 基本用法
 
@@ -46,10 +46,8 @@ Async/Await是基于Promise，Promise是基于回调函数。
 并发执行和顺序执
 
 ```
-const 
+const
 ```
-
-
 
 错误处理
 
