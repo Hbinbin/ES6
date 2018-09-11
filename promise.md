@@ -2,9 +2,27 @@
 
 promise和async await的目的就是让异步流程，用同步的方式表达，避免回调地狱。
 
+Promise有三种状态：**pending-进行中、resolved-已完成**、**rejected-已失败**
+
 用法：
 
-const promise
+```
+// 实例一个promise
+const promise = new Promise(function(resolve, reject) {
+  //  some code
+  if (/* 异步操作成功 */){
+    resolve(value);
+  } else {
+    reject(error);
+  }
+});
+// 链式调用
+promise.then(function(value) {
+  // success
+}, function(error) {
+  // failure
+});
+```
 
 原理：
 
