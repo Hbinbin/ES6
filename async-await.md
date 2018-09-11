@@ -45,10 +45,25 @@ async/await是为了简化多个Promise的同步操作，Promise是为了解决�
 
 ### 注意事项
 
-并发执行和顺序执
+并发执行和顺序执行
 
 ```
-const
+const fetchArr = [fetch(url1), fetch(url2), fetch(url3)];
+// 顺序执行异步操作
+async function getData() {
+    let dataArr = [];
+    for (let i = 0 ; i < fetchArr.length; i++) {
+        dataArr.push(await fetchArr[i]);
+    }
+}
+//并发执行
+async function getData() {
+    return fetchArr.map( async fetchData => {
+        let data = await fetchData;
+        return data;
+    });
+}
+
 ```
 
 错误处理
