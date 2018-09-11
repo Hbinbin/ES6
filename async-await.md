@@ -33,9 +33,8 @@
         method: 'POST'
         body: `sid=${userinfo.sid}&date=${userinfo.date}`
       });
-      return html.match(/<title>([\s\S]+)<\/title>/i)[1];
+      return shipinfo;
     }
-
 
 传送门：[Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
 
