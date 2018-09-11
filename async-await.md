@@ -18,15 +18,12 @@ const APIKey = {
   ORDERDETAIL: Symbol('orderdetail'),
 }
 const API = {
-  [APIKey.USERINFO]: {
     url: '/user/userinfo',
     params: {uid: ''}
   },
-  [APIKey.SHIPINFO]: {
     url: '/user/shipinfo',
     params: {sid: '',date: ''}
   },
-  [APIKey.ORDERDETAIL]: {
     url: '/user/orderdetail',
     params: {oid: ''}
   }
@@ -79,11 +76,10 @@ async function getData() {
 ```
 
 ```js
-//并发执行
+//并发执行,使用Promise.all
 async function getData() {
     return await Promise.all(fetchArr);
 }
-
 ```
 
 错误处理
