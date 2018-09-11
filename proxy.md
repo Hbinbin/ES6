@@ -13,5 +13,5 @@
 var proxy = new Proxy(target, handler);
 ```
 
-
+应用：
 
