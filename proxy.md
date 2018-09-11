@@ -15,3 +15,42 @@ var proxy = new Proxy(target, handler);
 
 应用：
 
+缓存代理：
+
+```
+// 斐波那契数列，number > 40开始很耗时
+const getFib = (number) => {
+  return number <= 2 ? 1 : getFib(number - 1) + getFib(number - 2)
+}
+```
+
+```js
+// 创建缓存代理函数
+const getCacheProxy = (fn, cache = new Map()) => {
+  return new Proxy(fn, {
+    // apply方法拦截函数调用
+    apply(target, context, args) {
+      const argsStr = String(args);
+      // 如果有缓存,直接返回缓存数据
+      if (cache.has(argsStr)) {
+        return cache.get(argsStr);
+      }
+      const result = fn(...args);
+      cache.set(argsStr, result);
+      return result;
+    }
+  })
+}
+const getFibProxy = getCacheProxy(getFib);
+
+console.time('耗时：');
+getFibProxy(40); // 耗时: 1142.31298828125ms
+console.timeEnd('耗时：'); 
+
+console.time('耗时：');
+getFibProxy(40); // 耗时: 0.037109375ms
+console.timeEnd('耗时：');
+```
+
+
+
