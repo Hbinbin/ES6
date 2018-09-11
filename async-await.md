@@ -4,6 +4,8 @@
 
 async/await是基于Promise，Promise是基于回调函数。
 
+async/await是为了简化多个Promise的同步操作，Promise是为了解决回调地狱的问题。
+
 ### 基本用法
 
 `async`函数返回一个 Promise 对象，可以使用`then`方法添加回调函数。当函数执行的时候，一旦遇到`await`就会先返回，等到异步操作完成，再接着执行函数体内后面的语句。
