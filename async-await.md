@@ -47,8 +47,11 @@ async/await是为了简化多个Promise的同步操作，Promise是为了解决�
 
 并发执行和顺序执行
 
-```
+```py
 const fetchArr = [fetch(url1), fetch(url2), fetch(url3)];
+```
+
+```js
 // 顺序执行异步操作
 async function getData() {
     let dataArr = [];
@@ -56,6 +59,9 @@ async function getData() {
         dataArr.push(await fetchArr[i]);
     }
 }
+```
+
+```js
 //并发执行
 async function getData() {
     return fetchArr.map( async fetchData => {
@@ -63,7 +69,12 @@ async function getData() {
         return data;
     });
 }
-
+// 相当于
+async function getData() {
+    for (..) {
+        async ... await ... 
+    }
+}
 ```
 
 错误处理
