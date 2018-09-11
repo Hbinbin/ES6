@@ -10,7 +10,7 @@
 * [Class继承](classji-cheng.md)
 * [Proxy](proxy.md)
 * [Promise](promise.md)
-* [Async await](async-await.md)
+* [Async/Await](async-await.md)
 * [其他](qi-ta.md)
   * [Symbol](qi-ta/symbol.md)
   * [点运算符](qi-ta/dian-yun-suan-fu.md)

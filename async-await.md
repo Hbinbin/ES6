@@ -1,8 +1,8 @@
 ### 简介
 
-使用`async / await`, 搭配`promise，` 可以通过编写同步的代码方式来处理异步流程, 提高代码的简洁性和可读性。
+使用`async/await`, 搭配`promise，` 可以通过编写同步的代码方式来处理异步流程, 提高代码的简洁性和可读性。
 
-async await是基于Promise，Promise是基于回调函数。
+async/await是基于Promise，Promise是基于回调函数。
 
 ### 基本用法
 
@@ -50,6 +50,24 @@ const
 ```
 
 错误处理
+
+```
+async function myFunction() {
+  try {
+    await fetch(url);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+// 另一种写法
+async function myFunction() {
+  await fetch()
+  .catch(function (err) {
+    console.error(err);
+  });
+}
+```
 
 传送门：[Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
 
