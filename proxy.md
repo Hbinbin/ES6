@@ -52,5 +52,5 @@ getFibProxy(40); // 耗时: 0.037109375ms
 console.timeEnd('耗时：');
 ```
 
-
+传送门：[Proxy应用](https://segmentfault.com/a/1190000015800703)
 
