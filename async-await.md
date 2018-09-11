@@ -27,14 +27,33 @@
       }
     }
     // 定义async函数
-    async function getDetail(url) {
+    async function getDetail() {
       let userinfo = await fetch(API[APIKey.USERINFO].url);
       let shipinfo = await fetch(API[APIKey.SHIPINFO].url, {
         method: 'POST'
         body: `sid=${userinfo.sid}&date=${userinfo.date}`
       });
+      console.log('我在这里最后执行');
       return shipinfo;
     }
+    // 调用
+    getDetail().then().catch().finally();
+
+### 使用注意点
+
+并发执行和顺序执行
+
+```
+
+```
+
+错误处理
+
+
+
+
+
+
 
 传送门：[Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
 
