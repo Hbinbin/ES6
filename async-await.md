@@ -2,6 +2,8 @@
 
 使用`async / await`, 搭配`promise，` 可以通过编写同步的代码方式来处理异步流程, 提高代码的简洁性和可读性。
 
+Async/Await是基于Promise，Promise是基于回调函数。
+
 ### 基本用法
 
 `async`函数返回一个 Promise 对象，可以使用`then`方法添加回调函数。当函数执行的时候，一旦遇到`await`就会先返回，等到异步操作完成，再接着执行函数体内后面的语句。
@@ -39,21 +41,17 @@
     // 调用
     getDetail().then().catch().finally();
 
-### 使用注意点
+### 注意事项
 
-并发执行和顺序执行
-
-```
+并发执行和顺序执
 
 ```
+const 
+```
+
+
 
 错误处理
-
-
-
-
-
-
 
 传送门：[Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
 
