@@ -8,6 +8,7 @@
   * [箭头函数](han-shu-mo-ren-zhi/jian-tou-han-shu.md)
   * [双冒号运算符](han-shu-mo-ren-zhi/shuang-mao-hao-yun-suan-fu.md)
 * [Class继承](classji-cheng.md)
+* [Proxy](proxy.md)
 * [Promise](promise.md)
 * [Async await](async-await.md)
 * [其他](qi-ta.md)
