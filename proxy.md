@@ -13,7 +13,7 @@
 var proxy = new Proxy(target, handler);
 ```
 
-应用：
+### 应用
 
 缓存代理：
 
