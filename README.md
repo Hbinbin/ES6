@@ -35,7 +35,7 @@ package.json文件
 
 ```js
 "dependencies":{
-     "babel-polyfill": "^6.26.0",
+     "babel-polyfill": "^6.26.0",// 提供浏览器不支持的ES新功能
      "babel-runtime":"6.26.0" // 运行时编译
 },
 "devDependencies":{
