@@ -36,17 +36,17 @@ package.json文件
 ```js
 "dependencies":{
      //"babel-polyfill": "^6.26.0",
-     "babel-runtime":"6.26.0"
+     "babel-runtime":"6.26.0" // 运行时编译
 },
 "devDependencies":{
-    "babel-core": "^6.22.1",
+    "babel-core": "^6.22.1", // 使用babel的api转换代码
     "babel-register": "^6.22.0",
-    "babel-preset-env": "^1.3.2",
-    "babel-preset-stage-2": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-loader": "^7.1.1",
-    //"babel-eslint": "^7.1.1",
-    //"babel-plugin-component": "^0.10.1"
+    "babel-preset-env": "^1.3.2", // 编译ES2015+版本
+    "babel-preset-stage-2": "^6.22.0", // 编译处于草案阶段的语法
+    "babel-plugin-transform-runtime": "^6.22.0",//运行时编译
+    "babel-loader": "^7.1.1", // 配置需要转码的js文件
+    //"babel-eslint": "^7.1.1", // 用eslint检查babel代码
+    //"babel-plugin-component": "^0.10.1" // element ui模块化引入插件
 }
 ```
 
