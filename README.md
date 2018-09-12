@@ -40,7 +40,7 @@ package.json文件
 },
 "devDependencies":{
     "babel-core": "^6.22.1", // 使用babel的api转换代码
-    "babel-register": "^6.22.0",
+    "babel-register": "^6.22.0",// 使用babel的方法之一
     "babel-preset-env": "^1.3.2", // 编译ES2015+版本
     "babel-preset-stage-2": "^6.22.0", // 编译处于草案阶段的语法
     "babel-plugin-transform-runtime": "^6.22.0",//运行时编译
