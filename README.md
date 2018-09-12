@@ -2,7 +2,7 @@
 
 一般将ES2015之后的版本，如ES2015、ES2016、ES2017、ES2018称为ES6。ES6泛指“下一代 JavaScript 语言”。每年的6月份，TC39 委员会都会发布ECMAScript的新版标准。
 
-传送门：[ES6教程](http://es6.ruanyifeng.com/?search=import&x=0&y=0#README)
+传送门：[阮一峰ES6教程](http://es6.ruanyifeng.com/?search=import&x=0&y=0#README)
 
 ## 各种环境的ES6支持率
 
