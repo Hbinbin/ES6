@@ -91,7 +91,7 @@ var child = new Child();
 child.bar(2); // instance 2
 ```
 
-举个栗子：
+举个例子：
 
 定义一个工具类：
 
